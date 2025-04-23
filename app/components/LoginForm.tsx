@@ -10,7 +10,7 @@ export default function LoginForm() {
   });
 
   const [message, setMessage] = useState("");
-  const [token, setToken] = useState("");
+  // const [token, setToken] = useState("");
   const router = useRouter();
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -20,7 +20,7 @@ export default function LoginForm() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setMessage("");
-    setToken("");
+    // setToken("");
 
     const res = await fetch("/api/auth/login", {
       method: "POST",
@@ -32,7 +32,7 @@ export default function LoginForm() {
 
     if (res.ok) {
       setMessage("✅ Logged in successfully!");
-      setToken(data.token);
+      // setToken(data.token);
       localStorage.setItem("token", data.token); // <-- tokenni localStorage ga yozamiz
       router.push("/sign-in");
     } else {
@@ -75,7 +75,7 @@ export default function LoginForm() {
         </button>
 
         <p className="text-sm text-center text-gray-600">
-          Don't have an account?{" "}
+          Don&apos;t have an account?{" "}
           <span
             onClick={() => router.push("/sign-up")}
             className="underline hover:cursor-pointer"
