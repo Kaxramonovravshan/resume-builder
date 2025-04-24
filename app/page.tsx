@@ -7,7 +7,7 @@ import { Drawer } from "vaul";
 const Home = () => {
   const [exp, setExp] = useState(false);
 
-  // useAuth();
+  useAuth();
   return (
     <div className="w-full md:p-0 p-2">
       <div className="max-w-7xl mx-auto flex md:flex-row flex-col gap-5">
