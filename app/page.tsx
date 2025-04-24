@@ -7,14 +7,14 @@ import { Drawer } from "vaul";
 const Home = () => {
   const [exp, setExp] = useState(false);
 
-  useAuth();
+  // useAuth();
   return (
-    <div className="w-full p-2">
-      <div className="max-w-7xl mx-auto flex justify-between">
+    <div className="w-full md:p-0 p-2">
+      <div className="max-w-7xl mx-auto flex md:flex-row flex-col gap-5">
         <div className="">
-          <div className="rounded mx-auto p-4 mb-5">
+          <div className="rounded mx-auto mb-5">
             <h1 className="mb-3 text-xl">General - Social</h1>
-            <div className="flex gap-2 items-center mb-4">
+            <div className="flex gap-1 md:justify-between items-center mb-4">
               <div>
                 <p>Full Name</p>
                 <input type="text" className="p-2 border rounded outline" />
@@ -24,7 +24,7 @@ const Home = () => {
                 <input type="text" className="p-2 border rounded outline" />
               </div>
             </div>
-            <div className="flex justify-between items-center mb-4">
+            <div className="flex gap-1 md:justify-between items-center mb-4">
               <div>
                 <p>Mobile Number</p>
                 <input type="text" className="p-2 border rounded outline" />
@@ -34,7 +34,7 @@ const Home = () => {
                 <input type="text" className="p-2 border rounded outline" />
               </div>
             </div>
-            <div className="flex justify-between items-center mb-4">
+            <div className="flex gap-1 md:justify-between items-center mb-4">
               <div>
                 <p>GitHub</p>
                 <input type="text" className="p-2 border rounded outline" />
@@ -44,7 +44,7 @@ const Home = () => {
                 <input type="text" className="p-2 border rounded outline" />
               </div>
             </div>
-            <div className="flex justify-between items-center mb-4">
+            <div className="flex gap-1 md:justify-between items-center mb-4">
               <div>
                 <p>Address</p>
                 <input type="text" className="p-2 border rounded outline" />
@@ -64,7 +64,7 @@ const Home = () => {
               />
             </div>
           </div>
-          <div className=" mx-auto p-4">
+          <div className=" mx-auto mb-5">
             <div>
               <h1 className="mb-2 text-xl">Experiences</h1>
               <button
@@ -75,28 +75,28 @@ const Home = () => {
               </button>
             </div>
           </div>
-          <div className=" mx-auto p-4">
+          <div className=" mx-auto mb-5">
             <h1 className="mb-2 text-xl">Projects</h1>
 
             <button className="w-full border-2 border-dashed p-3">
               Add New Item +
             </button>
           </div>
-          <div className=" mx-auto p-4">
+          <div className=" mx-auto mb-5">
             <h1 className="mb-2 text-xl">Education</h1>
 
             <button className="w-full border-2 border-dashed p-3">
               Add New Item +
             </button>
           </div>
-          <div className=" mx-auto p-4">
+          <div className=" mx-auto mb-5">
             <h1 className="mb-2 text-xl">Skills</h1>
 
             <button className="w-full border-2 border-dashed p-3">
               Add New Item +
             </button>
           </div>
-          <div className=" mx-auto p-4">
+          <div className=" mx-auto mb-5">
             <h1 className="mb-2 text-xl">Languages</h1>
 
             <button className="w-full border-2 border-dashed p-3">
@@ -105,7 +105,7 @@ const Home = () => {
           </div>
         </div>
 
-        <div className=" w-full p-4">View Page</div>
+        <div className=" w-full p-4 border">View Page</div>
       </div>
 
       {exp && (
