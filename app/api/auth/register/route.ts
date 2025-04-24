@@ -4,6 +4,10 @@ import bcrypt from "bcryptjs";
 
 const prisma = new PrismaClient();
 
+export const config = {
+  runtime: "nodejs",
+};
+
 export async function POST(req: NextRequest) {
   try {
     const { name, email, password } = await req.json();

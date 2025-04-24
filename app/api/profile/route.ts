@@ -1,6 +1,10 @@
 import { NextRequest, NextResponse } from "next/server";
 import { verifyToken } from "@/lib/auth";
 
+export const config = {
+  runtime: "nodejs",
+};
+
 export async function GET(req: NextRequest) {
   const authHeader = req.headers.get("authorization");
 
