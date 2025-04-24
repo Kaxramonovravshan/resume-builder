@@ -14,44 +14,68 @@ const Home = () => {
         <div className="">
           <div className="rounded mx-auto mb-5">
             <h1 className="mb-3 text-xl">General - Social</h1>
-            <div className="flex gap-1 md:justify-between items-center mb-4">
+            <div className="md:flex gap-1 md:justify-between items-center mb-4">
               <div>
                 <p>Full Name</p>
-                <input type="text" className="p-2 border rounded outline" />
+                <input
+                  type="text"
+                  className="p-2 border w-full mb-2 rounded outline"
+                />
               </div>
               <div>
                 <p>Email</p>
-                <input type="text" className="p-2 border rounded outline" />
+                <input
+                  type="text"
+                  className="p-2 w-full mb-2 border rounded outline"
+                />
               </div>
             </div>
-            <div className="flex gap-1 md:justify-between items-center mb-4">
+            <div className="md:flex gap-1 md:justify-between items-center mb-4">
               <div>
                 <p>Mobile Number</p>
-                <input type="text" className="p-2 border rounded outline" />
+                <input
+                  type="text"
+                  className="p-2 w-full mb-2 border rounded outline"
+                />
               </div>
               <div>
                 <p>LinkedIn</p>
-                <input type="text" className="p-2 border rounded outline" />
+                <input
+                  type="text"
+                  className="p-2 w-full mb-2 border rounded outline"
+                />
               </div>
             </div>
-            <div className="flex gap-1 md:justify-between items-center mb-4">
+            <div className="md:flex gap-1 md:justify-between items-center mb-4">
               <div>
                 <p>GitHub</p>
-                <input type="text" className="p-2 border rounded outline" />
+                <input
+                  type="text"
+                  className="p-2 w-full mb-2 border rounded outline"
+                />
               </div>
               <div>
                 <p>Potfolio</p>
-                <input type="text" className="p-2 border rounded outline" />
+                <input
+                  type="text"
+                  className="p-2 w-full mb-2 border rounded outline"
+                />
               </div>
             </div>
-            <div className="flex gap-1 md:justify-between items-center mb-4">
+            <div className="md:flex gap-1 md:justify-between items-center mb-4">
               <div>
                 <p>Address</p>
-                <input type="text" className="p-2 border rounded outline" />
+                <input
+                  type="text"
+                  className="p-2 w-full mb-2 border rounded outline"
+                />
               </div>
               <div>
                 <p>Job Title</p>
-                <input type="text" className="p-2 border rounded outline" />
+                <input
+                  type="text"
+                  className="p-2 w-full mb-2 border rounded outline"
+                />
               </div>
             </div>
             <div>
