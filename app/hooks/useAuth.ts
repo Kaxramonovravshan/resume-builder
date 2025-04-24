@@ -11,7 +11,7 @@ export const useAuth = () => {
     const checkAuth = async () => {
       const token = localStorage.getItem("token");
       if (!token) {
-        router.push("/login");
+        router.push("/sign-in");
         return;
       }
 
@@ -23,7 +23,7 @@ export const useAuth = () => {
 
       if (!res.ok) {
         localStorage.removeItem("token");
-        router.push("/login");
+        router.push("/sign-in");
       }
     };
 
