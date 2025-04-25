@@ -1,4 +1,5 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import { Drawer } from "vaul";
 import { TextareaAutosize } from "@mui/material";
 
@@ -8,6 +9,9 @@ type EducationProps = {
 };
 
 const Education = ({ edu, setEdu }: EducationProps) => {
+  const [startDate, setStartDate] = useState("");
+  const [isCurrentlyWorking, setIsCurrentlyWorking] = useState(false);
+  const today = new Date().toISOString().split("T")[0];
   return (
     <Drawer.Root open={edu} onClose={() => setEdu(false)}>
       <Drawer.Portal>
@@ -22,7 +26,7 @@ const Education = ({ edu, setEdu }: EducationProps) => {
               <p className="mb-1 text-sm text-gray-700">Institution Name</p>
               <input
                 type="text"
-                className="w-full p-2 border rounded-lg outline-none focus:ring-2 focus:ring-blue-500"
+                className="w-full p-2 border rounded-lg outline-none focus:border-0 focus:ring-2 focus:ring-blue-500"
                 placeholder="Enter institution Name"
               />
             </div>
@@ -31,7 +35,7 @@ const Education = ({ edu, setEdu }: EducationProps) => {
                 <p className="mb-1 text-sm text-gray-700">Degree</p>
                 <input
                   type="text"
-                  className="w-full p-2 border rounded-lg outline-none focus:ring-2 focus:ring-blue-500"
+                  className="w-full p-2 border rounded-lg outline-none focus:border-0 focus:ring-2 focus:ring-blue-500"
                   placeholder="Enter degree name"
                 />
               </div>
@@ -39,7 +43,7 @@ const Education = ({ edu, setEdu }: EducationProps) => {
                 <p className="mb-1 text-sm text-gray-700">Field of Study</p>
                 <input
                   type="text"
-                  className="w-full p-2 border rounded-lg outline-none focus:ring-2 focus:ring-blue-500"
+                  className="w-full p-2 border rounded-lg outline-none focus:border-0 focus:ring-2 focus:ring-blue-500"
                   placeholder="Enter field of study"
                 />
               </div>
@@ -48,28 +52,43 @@ const Education = ({ edu, setEdu }: EducationProps) => {
               <div className="w-1/2">
                 <p className="mb-1 text-sm text-gray-700">Start Date</p>
                 <input
-                  type="text"
-                  className="w-full p-2 border rounded-lg outline-none focus:ring-2 focus:ring-blue-500"
-                  placeholder="Enter company name"
+                  type="date"
+                  value={startDate}
+                  max={today}
+                  onChange={(e) => setStartDate(e.target.value)}
+                  className="w-full p-2 border rounded-lg outline-none focus:border-0 focus:ring-2 focus:ring-blue-500"
                 />
               </div>
               <div className="w-1/2">
                 <p className="mb-1 text-sm text-gray-700">End Date</p>
                 <input
-                  type="text"
-                  className="w-full p-2 border rounded-lg outline-none focus:ring-2 focus:ring-blue-500"
-                  placeholder="Enter role"
+                  type="date"
+                  disabled={isCurrentlyWorking}
+                  max={today}
+                  min={startDate}
+                  className="w-full p-2 border rounded-lg outline-none focus:border-0 focus:ring-2 focus:ring-blue-500"
                 />
               </div>
             </div>
-
+            <div className="flex items-center gap-2 mb-3">
+              <label htmlFor="currentlyWorking">
+                Hozir ham shu yerda o'qiyman
+              </label>
+              <input
+                type="checkbox"
+                id="currentlyWorking"
+                checked={isCurrentlyWorking}
+                onChange={() => setIsCurrentlyWorking(!isCurrentlyWorking)}
+                className="w-4 h-4"
+              />
+            </div>
             <div className="w-full mb-2">
               <p className="mb-1 text-sm text-gray-700">Description</p>
               <TextareaAutosize
                 minRows={3}
                 maxRows={10}
                 placeholder="Write your description..."
-                className="w-full p-3  rounded-xl outline resize-none focus:ring-2 focus:ring-blue-500"
+                className="w-full p-3  rounded-xl outline resize-none focus:border-0 focus:ring-2 focus:ring-blue-500"
               />
             </div>
 

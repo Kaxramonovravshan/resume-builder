@@ -17,7 +17,7 @@ const Home = () => {
 
   useAuth();
   return (
-    <div className="w-full md:p-0 p-5">
+    <div className="w-full md:p-0 p-5 bg-neutral-50">
       <div className="max-w-7xl mx-auto flex md:flex-row flex-col gap-5">
         <div className="w-full md:w-2/3">
           <div className="rounded mx-auto mb-5">
@@ -28,7 +28,7 @@ const Home = () => {
                 <input
                   type="text"
                   placeholder="Jonh Doe"
-                  className="p-2 border w-full mb-2 rounded outline"
+                  className="p-2 border w-full mb-2 rounded outline-none focus:border-0 focus:ring-2 focus:ring-blue-500"
                 />
               </div>
               <div>
@@ -36,7 +36,7 @@ const Home = () => {
                 <input
                   placeholder="example@gmail.com"
                   type="text"
-                  className="p-2 w-full mb-2 border rounded outline"
+                  className="p-2 w-full mb-2 border rounded outline-none focus:border-0 focus:ring-2 focus:ring-blue-500 "
                 />
               </div>
             </div>
@@ -46,7 +46,7 @@ const Home = () => {
                 <input
                   placeholder="+998 91 123 45 67"
                   type="text"
-                  className="p-2 w-full mb-2 border rounded outline"
+                  className="p-2 w-full mb-2 border rounded outline-none focus:border-0 focus:ring-2 focus:ring-blue-500 "
                 />
               </div>
               <div>
@@ -54,7 +54,7 @@ const Home = () => {
                 <input
                   placeholder="linkedin.com/username"
                   type="text"
-                  className="p-2 w-full mb-2 border rounded outline"
+                  className="p-2 w-full mb-2 border rounded outline-none focus:border-0 focus:ring-2 focus:ring-blue-500 "
                 />
               </div>
             </div>
@@ -64,7 +64,7 @@ const Home = () => {
                 <input
                   placeholder="github.com/username"
                   type="text"
-                  className="p-2 w-full mb-2 border rounded outline"
+                  className="p-2 w-full mb-2 border rounded outline-none focus:border-0 focus:ring-2 focus:ring-blue-500 "
                 />
               </div>
               <div>
@@ -72,7 +72,7 @@ const Home = () => {
                 <input
                   placeholder="example.com"
                   type="text"
-                  className="p-2 w-full mb-2 border rounded outline"
+                  className="p-2 w-full mb-2 border rounded  outline-none focus:border-0 focus:ring-2 focus:ring-blue-500"
                 />
               </div>
             </div>
@@ -82,7 +82,7 @@ const Home = () => {
                 <input
                   placeholder="Tashkent, Uzbekistan"
                   type="text"
-                  className="p-2 w-full mb-2 border rounded outline"
+                  className="p-2 w-full mb-2 border rounded outline-none focus:border-0 focus:ring-2 focus:ring-blue-500"
                 />
               </div>
               <div>
@@ -90,7 +90,7 @@ const Home = () => {
                 <input
                   placeholder="Frontend Developer"
                   type="text"
-                  className="p-2 w-full mb-2 border rounded outline"
+                  className="p-2 w-full mb-2 border rounded outline-none focus:border-0 focus:ring-2 focus:ring-blue-500"
                 />
               </div>
             </div>
@@ -100,7 +100,7 @@ const Home = () => {
                 minRows={3}
                 maxRows={10}
                 placeholder="Write your message..."
-                className="w-full p-3 border rounded-xl outline resize-none"
+                className="w-full p-3 border rounded-xl outline-none focus:border-0 focus:ring-2  focus:ring-blue-500 resize-none"
               />
             </div>
           </div>

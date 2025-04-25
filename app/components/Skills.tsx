@@ -23,7 +23,7 @@ const Skills = ({ skill, setSkill }: SkillProps) => {
               <p className="mb-1 text-sm text-gray-700">Skill</p>
               <input
                 type="text"
-                className="w-full p-2 border rounded-lg outline-none focus:ring-2 focus:ring-blue-500"
+                className="w-full p-2 border rounded-lg outline-none focus:border-0 focus:ring-2 focus:ring-blue-500"
                 placeholder="Enter Skill"
               />
             </div>
@@ -31,7 +31,7 @@ const Skills = ({ skill, setSkill }: SkillProps) => {
               <p className="mb-1 text-sm text-gray-700">Skill</p>
               <input
                 type="text"
-                className="w-full p-2 border rounded-lg outline-none focus:ring-2 focus:ring-blue-500"
+                className="w-full p-2 border rounded-lg outline-none focus:border-0 focus:ring-2 focus:ring-blue-500"
                 placeholder="Enter Skill list"
               />
             </div>

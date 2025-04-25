@@ -22,7 +22,7 @@ const Projects = ({ pro, setPro }: ProjectsProps) => {
               <p className="mb-1 text-sm text-gray-700">Project Name</p>
               <input
                 type="text"
-                className="w-full p-2 border rounded-lg outline-none focus:ring-2 focus:ring-blue-500"
+                className="w-full p-2 border rounded-lg outline-none focus:ring-2 focus:ring-blue-500 focus:border-0"
                 placeholder="Enter project name"
               />
             </div>
@@ -31,7 +31,7 @@ const Projects = ({ pro, setPro }: ProjectsProps) => {
                 <p className="mb-1 text-sm text-gray-700">Deploy Link</p>
                 <input
                   type="text"
-                  className="w-full p-2 border rounded-lg outline-none focus:ring-2 focus:ring-blue-500"
+                  className="w-full p-2 border rounded-lg outline-none focus:ring-2 focus:ring-blue-500 focus:border-0"
                   placeholder="Enter deploy link"
                 />
               </div>
@@ -39,7 +39,7 @@ const Projects = ({ pro, setPro }: ProjectsProps) => {
                 <p className="mb-1 text-sm text-gray-700">Repository link</p>
                 <input
                   type="text"
-                  className="w-full p-2 border rounded-lg outline-none focus:ring-2 focus:ring-blue-500"
+                  className="w-full p-2 border rounded-lg outline-none focus:ring-2 focus:ring-blue-500 focus:border-0"
                   placeholder="Enter repository link"
                 />
               </div>
@@ -51,7 +51,7 @@ const Projects = ({ pro, setPro }: ProjectsProps) => {
                 minRows={3}
                 maxRows={10}
                 placeholder="Write your description..."
-                className="w-full p-3  rounded-xl outline resize-none focus:ring-2 focus:ring-blue-500"
+                className="w-full p-3  rounded-xl outline resize-none focus:ring-2 focus:ring-blue-500 focus:border-0"
               />
             </div>
 

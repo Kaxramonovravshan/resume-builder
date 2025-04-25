@@ -29,7 +29,7 @@ const Languages = ({ lang, setLang }: LanguageProps) => {
               <p className="mb-1 text-sm text-gray-700">Language</p>
               <input
                 type="text"
-                className="w-full p-2 border border-gray-300 rounded-lg outline-none focus:ring-2 focus:ring-blue-500"
+                className="w-full p-2 border border-gray-300 rounded-lg outline-none focus:border-0 focus:ring-2 focus:ring-blue-500"
                 placeholder="Enter Language"
               />
             </div>
