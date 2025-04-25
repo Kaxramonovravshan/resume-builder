@@ -23,7 +23,7 @@ const Education = ({ edu, setEdu }: EducationProps) => {
               <input
                 type="text"
                 className="w-full p-2 border rounded-lg outline-none focus:ring-2 focus:ring-blue-500"
-                placeholder="Enter location"
+                placeholder="Enter institution Name"
               />
             </div>
             <div className="flex items-center gap-2 mb-2">
@@ -32,7 +32,7 @@ const Education = ({ edu, setEdu }: EducationProps) => {
                 <input
                   type="text"
                   className="w-full p-2 border rounded-lg outline-none focus:ring-2 focus:ring-blue-500"
-                  placeholder="Enter company name"
+                  placeholder="Enter degree name"
                 />
               </div>
               <div className="w-1/2">
@@ -40,7 +40,7 @@ const Education = ({ edu, setEdu }: EducationProps) => {
                 <input
                   type="text"
                   className="w-full p-2 border rounded-lg outline-none focus:ring-2 focus:ring-blue-500"
-                  placeholder="Enter role"
+                  placeholder="Enter field of study"
                 />
               </div>
             </div>
