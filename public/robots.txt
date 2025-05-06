@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://rs-builder.vercel.app/sitemap.xml
